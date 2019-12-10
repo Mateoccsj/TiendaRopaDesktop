@@ -39,18 +39,19 @@
             // 
             // grid
             // 
+            this.grid.AllowUserToOrderColumns = true;
             this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid.Location = new System.Drawing.Point(26, 26);
-            this.grid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grid.Margin = new System.Windows.Forms.Padding(2);
             this.grid.Name = "grid";
             this.grid.RowTemplate.Height = 24;
-            this.grid.Size = new System.Drawing.Size(604, 269);
+            this.grid.Size = new System.Drawing.Size(330, 269);
             this.grid.TabIndex = 0;
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(102, 367);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevo.Location = new System.Drawing.Point(36, 367);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(56, 19);
             this.btnNuevo.TabIndex = 1;
@@ -60,8 +61,8 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(240, 367);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Location = new System.Drawing.Point(158, 367);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(56, 19);
             this.btnEliminar.TabIndex = 2;
@@ -71,8 +72,8 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(364, 367);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificar.Location = new System.Drawing.Point(282, 367);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(56, 19);
             this.btnModificar.TabIndex = 3;
@@ -82,17 +83,17 @@
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Location = new System.Drawing.Point(110, 320);
-            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBusqueda.Location = new System.Drawing.Point(82, 321);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(175, 20);
+            this.txtBusqueda.Size = new System.Drawing.Size(242, 20);
             this.txtBusqueda.TabIndex = 4;
             this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(52, 320);
+            this.lblBuscar.Location = new System.Drawing.Point(24, 321);
             this.lblBuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBuscar.Name = "lblBuscar";
             this.lblBuscar.Size = new System.Drawing.Size(43, 13);
@@ -103,14 +104,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 414);
+            this.ClientSize = new System.Drawing.Size(367, 414);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.grid);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmGestionTipoProductos";
             this.Text = "Gestión tipo de productos";
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();

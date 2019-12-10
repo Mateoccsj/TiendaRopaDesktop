@@ -247,6 +247,7 @@
             this.cboProductos.Name = "cboProductos";
             this.cboProductos.Size = new System.Drawing.Size(159, 21);
             this.cboProductos.TabIndex = 5;
+            this.cboProductos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboProductos_KeyDown);
             // 
             // gridDetalleCompras
             // 

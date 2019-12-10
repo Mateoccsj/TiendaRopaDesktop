@@ -1,6 +1,6 @@
 ﻿namespace RotiseriaDesktop
 {
-    partial class FrmBuscarProducto
+    partial class FrmBuscarTipoProducto
     {
         /// <summary>
         /// Required designer variable.
@@ -30,53 +30,54 @@
         {
             this.lblBuscar = new System.Windows.Forms.Label();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
-            this.gridProductos = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.gridProductos)).BeginInit();
+            this.grid = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(27, 28);
+            this.lblBuscar.Location = new System.Drawing.Point(32, 23);
             this.lblBuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBuscar.Name = "lblBuscar";
             this.lblBuscar.Size = new System.Drawing.Size(43, 13);
-            this.lblBuscar.TabIndex = 28;
+            this.lblBuscar.TabIndex = 8;
             this.lblBuscar.Text = "Buscar:";
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Location = new System.Drawing.Point(92, 25);
+            this.txtBusqueda.Location = new System.Drawing.Point(90, 23);
             this.txtBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(244, 20);
-            this.txtBusqueda.TabIndex = 27;
-            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged_1);
-            this.txtBusqueda.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBusqueda_KeyDown_1);
+            this.txtBusqueda.Size = new System.Drawing.Size(175, 20);
+            this.txtBusqueda.TabIndex = 7;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
+            this.txtBusqueda.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBusqueda_KeyDown);
             // 
-            // gridProductos
+            // grid
             // 
-            this.gridProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridProductos.Location = new System.Drawing.Point(30, 58);
-            this.gridProductos.Margin = new System.Windows.Forms.Padding(2);
-            this.gridProductos.Name = "gridProductos";
-            this.gridProductos.RowTemplate.Height = 24;
-            this.gridProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProductos.Size = new System.Drawing.Size(642, 295);
-            this.gridProductos.TabIndex = 26;
-            this.gridProductos.DoubleClick += new System.EventHandler(this.gridProductos_DoubleClick);
+            this.grid.AllowUserToOrderColumns = true;
+            this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid.Location = new System.Drawing.Point(11, 56);
+            this.grid.Margin = new System.Windows.Forms.Padding(2);
+            this.grid.Name = "grid";
+            this.grid.RowTemplate.Height = 24;
+            this.grid.Size = new System.Drawing.Size(344, 272);
+            this.grid.TabIndex = 6;
+            this.grid.DoubleClick += new System.EventHandler(this.grid_DoubleClick);
             // 
-            // FrmBuscarProducto
+            // FrmBuscarTipoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 427);
+            this.ClientSize = new System.Drawing.Size(366, 355);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.txtBusqueda);
-            this.Controls.Add(this.gridProductos);
-            this.Name = "FrmBuscarProducto";
-            this.Text = "Buscar producto";
-            ((System.ComponentModel.ISupportInitialize)(this.gridProductos)).EndInit();
+            this.Controls.Add(this.grid);
+            this.Name = "FrmBuscarTipoProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FrmBuscarTipoProducto";
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,6 +87,6 @@
 
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.TextBox txtBusqueda;
-        private System.Windows.Forms.DataGridView gridProductos;
+        private System.Windows.Forms.DataGridView grid;
     }
 }

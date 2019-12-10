@@ -40,7 +40,7 @@
             // txtBusqueda
             // 
             this.txtBusqueda.Location = new System.Drawing.Point(166, 299);
-            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(175, 20);
             this.txtBusqueda.TabIndex = 9;
@@ -49,7 +49,7 @@
             // btnModificar
             // 
             this.btnModificar.Location = new System.Drawing.Point(336, 344);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(56, 19);
             this.btnModificar.TabIndex = 8;
@@ -60,7 +60,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(212, 344);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(56, 19);
             this.btnEliminar.TabIndex = 7;
@@ -71,7 +71,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Location = new System.Drawing.Point(74, 344);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(56, 19);
             this.btnNuevo.TabIndex = 6;
@@ -83,10 +83,10 @@
             // 
             this.gridProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridProductos.Location = new System.Drawing.Point(9, 10);
-            this.gridProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridProductos.Margin = new System.Windows.Forms.Padding(2);
             this.gridProductos.Name = "gridProductos";
             this.gridProductos.RowTemplate.Height = 24;
-            this.gridProductos.Size = new System.Drawing.Size(604, 269);
+            this.gridProductos.Size = new System.Drawing.Size(714, 269);
             this.gridProductos.TabIndex = 5;
             // 
             // lblBuscar
@@ -103,14 +103,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 431);
+            this.ClientSize = new System.Drawing.Size(734, 431);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.gridProductos);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmGestionProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de productos";

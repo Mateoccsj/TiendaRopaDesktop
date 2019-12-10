@@ -42,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioEfectivo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioCompra)).BeginInit();
             this.SuspendLayout();
@@ -122,6 +123,7 @@
             this.cboTipoProducto.Name = "cboTipoProducto";
             this.cboTipoProducto.Size = new System.Drawing.Size(182, 21);
             this.cboTipoProducto.TabIndex = 45;
+            this.cboTipoProducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboTipoProducto_KeyDown);
             // 
             // label5
             // 
@@ -178,11 +180,21 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(50, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(216, 13);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "Presiona \"F2\" para ver los tipos de producto";
+            // 
             // FrmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 386);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtColor);
             this.Controls.Add(this.nudPrecioEfectivo);
             this.Controls.Add(this.txtMarca);
@@ -223,5 +235,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -135,5 +135,16 @@ namespace RotiseriaDesktop
             FrmGestionClientes frmGestionClientes = new FrmGestionClientes();
             frmGestionClientes.ShowDialog();
         }
+
+        private void insertarNuevoUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNuevoUsuario frmNuevoUsuario = new FrmNuevoUsuario();
+            frmNuevoUsuario.ShowDialog();
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

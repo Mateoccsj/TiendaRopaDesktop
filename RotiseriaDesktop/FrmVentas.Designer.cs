@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlDetalleVenta = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.nudTotal = new System.Windows.Forms.NumericUpDown();
@@ -51,7 +52,6 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.pnlDetalleVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudTotal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDescuento)).BeginInit();
@@ -79,6 +79,15 @@
             this.pnlDetalleVenta.Name = "pnlDetalleVenta";
             this.pnlDetalleVenta.Size = new System.Drawing.Size(797, 63);
             this.pnlDetalleVenta.TabIndex = 12;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(46, 37);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(215, 13);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Presiona \"F2\" para abri listado de productos";
             // 
             // btnCancelar
             // 
@@ -206,6 +215,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -320,15 +330,6 @@
             this.label7.Size = new System.Drawing.Size(192, 13);
             this.label7.TabIndex = 30;
             this.label7.Text = "Presiona \"F2\" para abri lista de clientes";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(46, 37);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(215, 13);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "Presiona \"F2\" para abri listado de productos";
             // 
             // FrmVentas
             // 

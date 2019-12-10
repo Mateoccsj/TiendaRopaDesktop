@@ -16,6 +16,8 @@ namespace RotiseriaDesktop
     {
         TiendaDeRopaDesktopContext db;
         Producto producto;
+        FrmBuscarTipoProducto frmBuscarTipoProducto;
+
         public FrmNuevoProducto()
         {
             InitializeComponent();
@@ -97,6 +99,19 @@ namespace RotiseriaDesktop
             }
             db.SaveChanges();
             this.Close();
+        }
+
+        private void cboTipoProducto_KeyDown(object sender, KeyEventArgs argumento)
+        {
+            if (argumento.KeyCode == Keys.F2)
+            {
+                FrmBuscarTipoProducto frmBuscarTipoProducto = new FrmBuscarTipoProducto(cboTipoProducto.Text);
+                frmBuscarTipoProducto.ShowDialog();
+                if (frmBuscarTipoProducto.idSeleccionado > 0)
+                {
+                    cboTipoProducto.SelectedValue = frmBuscarTipoProducto.idSeleccionado;
+                }
+            }
         }
     }
 }

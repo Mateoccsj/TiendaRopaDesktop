@@ -214,5 +214,11 @@ namespace RotiseriaDesktop
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmNuevoCliente frmNuevoCliente = new FrmNuevoCliente();
+            frmNuevoCliente.ShowDialog();
+        }
     }
 }

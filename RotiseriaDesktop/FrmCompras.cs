@@ -199,5 +199,18 @@ namespace RotiseriaDesktop
                 }
             }
         }
+
+        private void cboProductos_KeyDown(object sender, KeyEventArgs argumento)
+        {
+            if (argumento.KeyCode == Keys.F2)
+            {
+                FrmBuscarProducto frmBuscarProducto = new FrmBuscarProducto(cboProductos.Text);
+                frmBuscarProducto.ShowDialog();
+                if (frmBuscarProducto.idSeleccionado > 0)
+                {
+                    cboProductos.SelectedValue = frmBuscarProducto.idSeleccionado;
+                }
+            }
+        }
     }
 }

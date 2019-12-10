@@ -48,7 +48,7 @@ namespace RotiseriaDesktop
             int idSeleccionado = (int)this.celdaFilaActual(gridGestionUsuario, 0);
             //string usuarioSeleccionado = (string)this.celdaFilaActual(gridGestionUsuario, 2);
 
-            FrmNuevoUsuario frmNuevoUsuario = new FrmNuevoUsuario(idSeleccionado, db);
+            FrmNuevoUsuario frmNuevoUsuario = new FrmNuevoUsuario();
             frmNuevoUsuario.ShowDialog();
             actualizarGrilla();
         }
