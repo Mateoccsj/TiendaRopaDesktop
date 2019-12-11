@@ -19,6 +19,7 @@ namespace RotiseriaDesktop
         public FrmGestionProveedores()
         {
             InitializeComponent();
+            actualizarGrilla();
         }
 
         private void txtBusqueda_TextChanged(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace RotiseriaDesktop
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            FrmNuevoProveedor frmNuevoProveedor = new FrmNuevoProveedor(db);
+            FrmNuevoProveedor frmNuevoProveedor = new FrmNuevoProveedor();
             frmNuevoProveedor.ShowDialog();
             gridProveedores.DataSource = db.Proveedores.ToList();
 

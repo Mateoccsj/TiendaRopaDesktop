@@ -19,6 +19,7 @@ namespace RotiseriaDesktop
         public FrmGestionClientes()
         {
             InitializeComponent();
+            actualizarGrilla();
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -70,8 +71,7 @@ namespace RotiseriaDesktop
                                   select new
                                   {
                                       id = cliente.Id,
-                                      Nombre = cliente.Nombre,
-                                      Apellido = cliente.Apellido,
+                                      Nombre = cliente.Nombre + " " + cliente.Apellido,
                                       Domicilio = cliente.Domicilio,
                                       Telefono = cliente.Telefono
                                   };

@@ -62,7 +62,7 @@
             this.gridProductos.Name = "gridProductos";
             this.gridProductos.RowTemplate.Height = 24;
             this.gridProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProductos.Size = new System.Drawing.Size(642, 295);
+            this.gridProductos.Size = new System.Drawing.Size(838, 295);
             this.gridProductos.TabIndex = 26;
             this.gridProductos.DoubleClick += new System.EventHandler(this.gridProductos_DoubleClick);
             // 
@@ -70,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 427);
+            this.ClientSize = new System.Drawing.Size(879, 427);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.gridProductos);

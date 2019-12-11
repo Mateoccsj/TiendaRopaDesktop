@@ -76,7 +76,7 @@
             this.Controls.Add(this.grid);
             this.Name = "FrmBuscarTipoProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmBuscarTipoProducto";
+            this.Text = "Buscar tipo de producto";
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
